@@ -75,8 +75,8 @@ def DispatchProcess(cmd, args):
         print ("args[%s]=" % k,v )
     shell_command2 = cmd + ' ' + v
     status2, result2 = subprocess.getstatusoutput(shell_command2)
-    shell_command1 = 'snmpwalk -v2c 211.152.50.254 -cpubl1c ifInOctets | grep \'ifInOctets.15\' '
-    status, result = subprocess.getstatusoutput(shell_command1)
+    #shell_command1 = 'snmpwalk -v2c 211.152.50.254 -cpubl1c ifInOctets | grep \'ifInOctets.15\' '
+    #status, result = subprocess.getstatusoutput(shell_command1)
     
     print (str(result2).encode())
     return str(result2).encode()
